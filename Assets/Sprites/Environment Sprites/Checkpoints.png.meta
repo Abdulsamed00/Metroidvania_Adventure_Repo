@@ -80,7 +80,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -125,6 +125,30 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -132,10 +156,10 @@ TextureImporter:
       name: Checkpoints_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 11
         y: 240
-        width: 80
-        height: 80
+        width: 58
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,10 +177,10 @@ TextureImporter:
       name: Checkpoints_1
       rect:
         serializedVersion: 2
-        x: 80
+        x: 91
         y: 240
-        width: 80
-        height: 80
+        width: 58
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,10 +198,10 @@ TextureImporter:
       name: Checkpoints_2
       rect:
         serializedVersion: 2
-        x: 160
+        x: 165
         y: 240
-        width: 80
-        height: 80
+        width: 63
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,10 +219,10 @@ TextureImporter:
       name: Checkpoints_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 11
         y: 160
-        width: 80
-        height: 80
+        width: 58
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,10 +240,10 @@ TextureImporter:
       name: Checkpoints_4
       rect:
         serializedVersion: 2
-        x: 80
+        x: 91
         y: 160
-        width: 80
-        height: 80
+        width: 58
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,10 +261,10 @@ TextureImporter:
       name: Checkpoints_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 165
         y: 160
-        width: 80
-        height: 80
+        width: 63
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +282,10 @@ TextureImporter:
       name: Checkpoints_6
       rect:
         serializedVersion: 2
-        x: 0
+        x: 11
         y: 80
-        width: 80
-        height: 80
+        width: 58
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,10 +303,10 @@ TextureImporter:
       name: Checkpoints_7
       rect:
         serializedVersion: 2
-        x: 80
+        x: 92
         y: 80
-        width: 80
-        height: 80
+        width: 57
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,10 +324,10 @@ TextureImporter:
       name: Checkpoints_8
       rect:
         serializedVersion: 2
-        x: 160
+        x: 172
         y: 80
-        width: 80
-        height: 80
+        width: 56
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,10 +345,10 @@ TextureImporter:
       name: Checkpoints_9
       rect:
         serializedVersion: 2
-        x: 0
+        x: 11
         y: 0
-        width: 80
-        height: 80
+        width: 58
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,10 +366,10 @@ TextureImporter:
       name: Checkpoints_10
       rect:
         serializedVersion: 2
-        x: 80
+        x: 92
         y: 0
-        width: 80
-        height: 80
+        width: 57
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,10 +387,10 @@ TextureImporter:
       name: Checkpoints_11
       rect:
         serializedVersion: 2
-        x: 160
+        x: 172
         y: 0
-        width: 80
-        height: 80
+        width: 56
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

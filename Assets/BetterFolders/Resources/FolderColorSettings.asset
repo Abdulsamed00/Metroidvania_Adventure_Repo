@@ -198,3 +198,11 @@ MonoBehaviour:
     applyColorToSubfolders: 1
     applyIconToSubfolders: 0
     materialColor: 0
+  - folderName: Fantasy Adventure Pack
+    folderColor: {r: 1, g: 0.2509804, b: 0.19215688, a: 1}
+    fullPath: 
+    icon: {fileID: 0}
+    applyToAllFolders: 1
+    applyColorToSubfolders: 1
+    applyIconToSubfolders: 0
+    materialColor: 0

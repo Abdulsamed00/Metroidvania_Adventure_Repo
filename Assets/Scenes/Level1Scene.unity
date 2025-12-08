@@ -218,6 +218,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aafbe3166efbba4fa0aff4f3aaacab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1034994343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034994344}
+  m_Layer: 3
+  m_Name: GroundChechk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1034994344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034994343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.155, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1932099106}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1237266252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -229,8 +260,32 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: -5611680461544004492, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+      propertyPath: groundCheck
+      value: 
+      objectReference: {fileID: 1034994344}
+    - target: {fileID: -5611680461544004492, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionId
+      value: 4ee93ba4-3282-445d-b390-ee5d97813c06
+      objectReference: {fileID: 0}
+    - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_ActionName
+      value: Character/Jump[/Keyboard/space]
+      objectReference: {fileID: 0}
     - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
@@ -238,24 +293,52 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1000770891}
     - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1000770891}
+    - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnMove
+      objectReference: {fileID: 0}
+    - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnJump
       objectReference: {fileID: 0}
     - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: CharacterController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CharacterController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 64707649784577061, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7738907795435258547, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
       propertyPath: m_Name
       value: Player1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738907795435258547, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7738907795435258550, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
       propertyPath: m_RootOrder
@@ -331,7 +414,7 @@ GameObject:
   - component: {fileID: 1680549910}
   - component: {fileID: 1680549909}
   - component: {fileID: 1680549912}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,3 +512,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 1}
   m_EdgeRadius: 0
+--- !u!4 &1932099106 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7738907795435258550, guid: 27f35b2945ed4bf4aa5eebac283c3137, type: 3}
+  m_PrefabInstance: {fileID: 1237266252}
+  m_PrefabAsset: {fileID: 0}
